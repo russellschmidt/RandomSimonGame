@@ -4,6 +4,7 @@
 //
 //  Created by Russell Schmidt on 8/6/15.
 //  Copyright (c) 2015 RussellSchmidt.net. All rights reserved.
+//  https://github.com/russellschmidt/RandomSimonGame.git
 //
 
 import UIKit
