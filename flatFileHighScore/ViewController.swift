@@ -54,8 +54,16 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
+  func allGrayEverything() {
+    lowerRightButtonOutlet.backgroundColor = UIColor.grayColor()
+    upperLeftButtonOutlet.backgroundColor = UIColor.grayColor()
+    upperRightButtonOutlet.backgroundColor = UIColor.grayColor()
+    lowerLeftButtonOutlet.backgroundColor = UIColor.grayColor()
+  }
+
   @IBAction func startGameButton(sender: AnyObject) {
     // launch timer with launches game
+    allGrayEverything()
 
     // if the counter already reached zero, restart game on press
     if counter == 0 {
@@ -118,12 +126,6 @@ class ViewController: UIViewController {
   func countdownCounter () {
     // handles countdown output and launches save game function at zero
     // also handles random background colors
-
-    self.lowerRightButtonOutlet.backgroundColor = UIColor.grayColor()
-    self.upperLeftButtonOutlet.backgroundColor = UIColor.grayColor()
-    self.upperRightButtonOutlet.backgroundColor = UIColor.grayColor()
-    self.lowerLeftButtonOutlet.backgroundColor = UIColor.grayColor()
-
 
     if counter == 0 {
       // stop timer at 0
