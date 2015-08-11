@@ -119,6 +119,10 @@ class ViewController: UIViewController {
     // handles countdown output and launches save game function at zero
     // also handles random background colors
 
+    self.lowerRightButtonOutlet.backgroundColor = UIColor.grayColor()
+    self.upperLeftButtonOutlet.backgroundColor = UIColor.grayColor()
+    self.upperRightButtonOutlet.backgroundColor = UIColor.grayColor()
+    self.lowerLeftButtonOutlet.backgroundColor = UIColor.grayColor()
 
 
     if counter == 0 {
